@@ -31,7 +31,7 @@ h1 {
 }
 
 .card {
-    width: 25%;
+    width: 25vw;
     min-height: 10rem;
     border-radius: 8px;
     padding: 1rem;
@@ -66,13 +66,87 @@ h1 {
     align-items: center;
 }
 
-.links__container a {
+a {
     text-decoration: none;
-    font-weight: bold;
     color: black;
-    transition: color .6s ease;
+    transition: color .3s ease;
 }
 
-.links__container a:hover {
-    color: rgb(226, 44, 44);
+.links__container a {
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(21, 93, 226);
+}
+
+footer {
+    margin-top: 1rem;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: black;
+    color: #F7DF1E;
+}
+
+footer span {
+    margin: 0 .2rem;
+}
+
+footer span a {
+    color: #F7DF1E;
+}
+
+footer span i {
+    margin: 0 .2rem;
+}
+
+@media screen and (max-device-width: 600px) {
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+    .card:hover {
+        transform: scale(1);
+    }
+
+    footer {
+        height: 4rem;
+        font-size: .9rem;
+    }
+
+    @media screen and (max-device-width: 400px) {
+        footer {
+            font-size: .7rem;
+        }
+    
+    }
+    
+    footer span {
+        margin: 0 .1rem;
+    }
+    
+    footer span a {
+        color: #F7DF1E;
+    }
+    
+    footer span i {
+        margin: 0 .1rem;
+    }
 }
